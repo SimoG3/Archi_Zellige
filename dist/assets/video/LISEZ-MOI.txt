@@ -1,0 +1,15 @@
+Déposez ici votre fichier vidéo au format MP4, nommé exactement :
+
+    atelier.mp4
+
+Chemin complet attendu : dist/assets/video/atelier.mp4
+(à côté de dist/index.html)
+
+Dès que ce fichier est présent, la section "Le geste" (après "Atelier")
+lit la vidéo automatiquement, en boucle et sans son. Tant qu'il est absent,
+la section affiche simplement la photo envoyée par vous en arrière-plan.
+
+Conseils pour le fichier vidéo :
+- format MP4 (H.264), muet ou avec son (la lecture se fait en muet de toute façon)
+- 10 à 25 secondes, en boucle si possible
+- poids raisonnable (quelques Mo) pour un chargement rapide

@@ -1,0 +1,7 @@
+
+/* ---------- compléments ---------- */
+.fine{font-size:.88rem;line-height:1.5;color:var(--fg-soft)}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 86px);z-index:200;max-width:min(92vw,440px);padding:.85em 1.2em;border-radius:3px;background:#0C1B36;color:#F6F2EA;font:500 .95rem/1.35 var(--ff-body);box-shadow:0 18px 40px -18px rgba(0,0,0,.7);transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:opacity .35s,transform .5s var(--ease)}
+.toast.is-on{opacity:1;transform:translate(-50%,0)}
+.cmp__grp.is-off legend{opacity:.5}
+@media print{.hd,.fab,.loader,.prog{display:none!important}}

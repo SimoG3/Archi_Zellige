@@ -1,0 +1,428 @@
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="prog" id="prog" aria-hidden="true"></div>
+
+<div class="loader" id="loader" role="status" aria-live="polite">
+  <div class="loader__tiles" aria-hidden="true">
+    <img src="{{LOGO_NAVY}}" alt="" style="--i:0"><img src="{{LOGO_SKY}}" alt="" style="--i:1"><img src="{{LOGO_ORANGE}}" alt="" style="--i:2"><img src="{{LOGO_GOLD}}" alt="" style="--i:3">
+  </div>
+  <span class="loader__word" aria-hidden="true">ArchiZellige</span>
+  <span class="sr">Chargement du site</span>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="clipArch" clipPathUnits="objectBoundingBox">
+      <path d="M0.075,1 L0.075,0.62 C0.075,0.55 0.012,0.50 0.012,0.40 C0.012,0.22 0.30,0.12 0.5,0 C0.70,0.12 0.988,0.22 0.988,0.40 C0.988,0.50 0.925,0.55 0.925,0.62 L0.925,1 Z"/>
+    </clipPath>
+  </defs>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-tiles" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9.2 8.4c.1 2.6 3.7 6.2 6.4 6.4l1.2-1.4-2.2-1.1-.9.7c-1-.4-2.1-1.5-2.5-2.5l.7-.9-1.1-2.2z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".7" fill="currentColor"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12,1.5 15.08,4.57 19.42,4.58 19.43,8.92 22.5,12 19.43,15.08 19.42,19.42 15.08,19.43 12,22.5 8.92,19.43 4.58,19.42 4.57,15.08 1.5,12 4.57,8.92 4.58,4.58 8.92,4.57"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor" stroke="none"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor" stroke="none"/></symbol>
+</svg>
+
+<header class="hd" id="hd">
+  <a class="brand" href="#top" aria-label="La Maison AZ, ArchiZellige&nbsp;: retour en haut de page">
+    <span class="brand__mark" aria-hidden="true"><img data-img="logo-navy" alt=""><img data-img="logo-sky" alt=""><img data-img="logo-orange" alt=""><img data-img="logo-gold" alt=""></span>
+    <span class="brand__word">ArchiZellige</span>
+  </a>
+  <nav class="hd__nav" aria-label="Navigation principale">
+    <a href="#collections">Collections</a><a href="#couleurs">Couleurs</a><a href="#realisations">Réalisations</a><a href="#atelier">Atelier</a><a href="#sur-mesure">Sur mesure</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="hd__right">
+    <button class="iconbtn hd__sel" id="selBtn" type="button" aria-label="Ouvrir ma sélection d’échantillons" hidden><svg class="ico" aria-hidden="true"><use href="#i-tiles"/></svg><span class="iconbtn__n" id="selN">0</span></button>
+    <a class="btn btn--primary btn--sm hd__cta" href="#contact">Demander un devis</a>
+    <button class="iconbtn hd__burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+  <nav class="menu__nav" aria-label="Menu">
+    <a href="#apropos" style="--i:0">À propos</a>
+    <a href="#collections" style="--i:1">Collections</a>
+    <a href="#couleurs" style="--i:2">Couleurs</a>
+    <a href="#realisations" style="--i:3">Réalisations</a>
+    <a href="#atelier" style="--i:4">Atelier</a>
+    <a href="#geste" style="--i:5">Le geste</a>
+    <a href="#pourquoi" style="--i:6">Pourquoi nous</a>
+    <a href="#applications" style="--i:7">Applications</a>
+    <a href="#sur-mesure" style="--i:8">Sur mesure</a>
+    <a href="#contact" style="--i:9">Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a href="#" data-tel><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>06 61 31 62 29</a>
+    <a href="mailto:maison.az2026@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>maison.az2026@gmail.com</a>
+    <a href="https://www.instagram.com/maison.zellige/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg>@maison.zellige</a>
+    <div class="menu__tiles" aria-hidden="true"><img data-img="logo-navy" alt=""><img data-img="logo-sky" alt=""><img data-img="logo-orange" alt=""><img data-img="logo-gold" alt=""></div>
+  </div>
+</div>
+
+<main id="contenu">
+
+<!-- ================= HÉROS ================= -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero__stage" id="heroStage" aria-hidden="true">
+    <div class="hero__scene" id="heroScene">
+      <div class="wall" id="wall"></div>
+      <div class="niche" id="niche"></div>
+      <div class="wall__light" id="wallLight"></div>
+    </div>
+  </div>
+  <div class="hero__veil" aria-hidden="true"></div>
+  <div class="hero__copy">
+    <h1 id="hero-title" style="--i:0">Le zellige marocain, façonné à la main à&nbsp;Fès.</h1>
+    <p class="hero__lead" style="--i:1">La Maison AZ – ArchiZellige allie savoir-faire artisanal, qualité et esthétique contemporaine, pour les architectes, les designers et les particuliers.</p>
+    <div class="hero__cta" style="--i:2">
+      <a class="btn btn--primary" href="#collections"><span class="lbl-lg">Découvrir les collections</span><span class="lbl-sm">Collections</span></a>
+      <a class="btn btn--ghost" href="#contact"><span class="lbl-lg">Demander un devis</span><span class="lbl-sm">Devis</span></a>
+    </div>
+  </div>
+  <p class="hero__hint" id="heroHint" aria-hidden="true"></p>
+  <div class="hero__frise" aria-hidden="true"></div>
+</section>
+
+<!-- ================= À PROPOS ================= -->
+<section class="sec about" id="apropos" aria-labelledby="ab-h">
+  <div class="wrap about__grid">
+    <div class="about__txt">
+      <h2 class="h2" id="ab-h">Une maison de zellige, un héritage familial.</h2>
+      <p class="lead">La Maison AZ – ArchiZellige est spécialisée dans le zellige marocain traditionnel, alliant savoir-faire artisanal, qualité et esthétique contemporaine.</p>
+      <p class="about__p">Notre activité est un héritage familial de plus de 30 ans d’expérience dans le domaine du zellige. Nous travaillons avec des artisans spécialisés afin de proposer des pièces authentiques, soigneusement fabriquées à la main à Fès, au Maroc.</p>
+      <ul class="facts">
+        <li><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-star"/></svg><span><b>30+ ans</b> de savoir-faire familial dans le zellige.</span></li>
+        <li><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-star"/></svg><span><b>Fabriqué à la main</b> par des artisans spécialisés à Fès.</span></li>
+        <li><svg aria-hidden="true" viewBox="0 0 24 24"><use href="#i-star"/></svg><span><b>Sur mesure</b>&nbsp;: couleurs, formats, motifs et compositions.</span></li>
+      </ul>
+      <div class="about__cta">
+        <a class="btn btn--dark" href="#histoire">Notre histoire</a>
+        <a class="btn btn--ghost" href="#collections">Nos collections</a>
+      </div>
+    </div>
+    <div class="about__art" data-group3d aria-hidden="true">
+      <div class="aa">
+        <div class="aa__ring"></div>
+        <div class="aa__arch" data-bg="ph-f-interieur"></div>
+        <div class="aa__sq" data-bg="ph-m-bordeaux-or"></div>
+        <div class="aa__tile"><img data-img="logo-orange" alt=""></div>
+        <div class="aa__sq2"><img data-img="logo-gold" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COLLECTIONS ================= -->
+<section class="sec dark coll" id="collections" aria-labelledby="co-h">
+  <div class="wrap sh sh--row">
+    <h2 class="h2" id="co-h">Nos zelliges&nbsp;: couleurs, formes, motifs.</h2>
+    <p class="lead">Carreaux unis, formes modernes, arabesques complexes et frises&nbsp;: faites défiler les collections et ajoutez celles qui vous inspirent à votre sélection.</p>
+  </div>
+  <div class="cf" id="cf">
+    <div class="cf__track" id="cfTrack" tabindex="0" role="region" aria-roledescription="carrousel" aria-label="Collections de zellige. Utilisez les flèches gauche et droite pour parcourir."></div>
+    <div class="wrap cf__bar">
+      <div class="cf__info" aria-live="polite">
+        <h3 id="cfTitle"></h3>
+        <p id="cfDesc"></p>
+        <div class="cf__act" id="cfAct"></div>
+      </div>
+      <div class="cf__ctrl">
+        <button class="linkbtn cf__cat" type="button" data-ask="Catalogue">Recevoir le catalogue</button>
+        <div class="cf__dots" id="cfDots" aria-hidden="true"></div>
+        <button class="iconbtn" id="cfPrev" type="button" aria-label="Collection précédente"><svg class="ico" aria-hidden="true"><use href="#i-arrow-l"/></svg></button>
+        <button class="iconbtn" id="cfNext" type="button" aria-label="Collection suivante"><svg class="ico" aria-hidden="true"><use href="#i-arrow-r"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COULEURS ================= -->
+<section class="sec col" id="couleurs" aria-labelledby="cl-h">
+  <div class="wrap">
+    <div class="sh sh--row">
+      <h2 class="h2" id="cl-h">Nos couleurs</h2>
+      <p class="lead">41 nuances réparties en 11 familles, émaillées à la main. Touchez un carreau pour le voir de près, l’ajouter à votre sélection ou demander un échantillon.</p>
+    </div>
+    <div class="fam" id="fam" role="group" aria-label="Familles de couleurs"></div>
+    <div class="swg" id="swg"></div>
+    <p class="col__note" id="colInfo" aria-live="polite"></p>
+    <div class="col__cta">
+      <button class="btn btn--dark" type="button" data-ask="Échantillons">Demander des échantillons</button>
+      <button class="btn btn--ghost" type="button" data-ask="Informations sur les couleurs">Informations sur les couleurs</button>
+    </div>
+    <p class="col__note">Les légères variations de couleur, de texture et de forme font partie de l’authenticité du zellige. Des teintes sur mesure sont possibles&nbsp;: parlez-nous de votre projet.</p>
+  </div>
+</section>
+
+<!-- ================= RÉALISATIONS ================= -->
+<section class="sec dark" id="realisations" aria-labelledby="re-h">
+  <div class="wrap">
+    <div class="sh sh--row">
+      <h2 class="h2" id="re-h">Réalisations</h2>
+      <p class="lead">Fontaines, cuisines, hammam, murs et panneaux&nbsp;: le zellige en situation. Touchez une image pour l’agrandir.</p>
+    </div>
+    <div class="gfil" id="gfil" role="group" aria-label="Filtrer les réalisations"></div>
+    <div class="gal" id="gal"></div>
+    <div class="ig">
+      <div class="ig__txt">
+        <h3 class="ig__handle">Suivez nos créations sur Instagram</h3>
+        <p class="lead">Réalisations, nuanciers et inspirations&nbsp;: retrouvez-nous sur @maison.zellige.</p>
+        <a class="btn btn--ghost" href="https://www.instagram.com/maison.zellige/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg>Ouvrir Instagram</a>
+      </div>
+      <div class="ig__grid" id="igGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ATELIER ================= -->
+<section class="sec alt atl" id="atelier" aria-labelledby="at-h">
+  <div class="wrap atl__grid">
+    <div class="atl__head">
+      <h2 class="h2" id="at-h">L’art du zellige traditionnel</h2>
+      <p class="lead">Nos carreaux de zellige sont fabriqués à la main par des artisans spécialisés à Fès, au Maroc.</p>
+    </div>
+    <div class="atl__stage" aria-hidden="true">
+      <div class="xs" id="xs" style="--T:90px;--th:15px">
+        <div class="xs__cam" id="xsCam"><div class="xs__grp" id="xsGrp"><div class="xs__shadow"></div></div></div>
+      </div>
+    </div>
+    <div class="atl__steps">
+      <ol class="steps">
+        <li><h3><span>1</span>Façonnée</h3><p>Chaque pièce est modelée à la main dans la terre. Aucune n’est tout à fait identique à sa voisine.</p></li>
+        <li><h3><span>2</span>Émaillée</h3><p>L’émail donne sa profondeur à la couleur et fait vibrer la lumière sur la surface du carreau.</p></li>
+        <li><h3><span>3</span>Travaillée avec soin</h3><p>Chaque pièce est finie selon un savoir-faire traditionnel transmis de génération en génération, puis assemblée avec ses sœurs.</p></li>
+      </ol>
+      <p class="atl__note">Les légères variations de couleur, de texture et de forme font partie de l’authenticité et du caractère unique du zellige marocain.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LE GESTE (vidéo) ================= -->
+<section class="vid" id="geste" aria-labelledby="vid-h">
+  <div class="vid__media" aria-hidden="true">
+    <video id="vidBg" muted loop playsinline preload="none" data-poster="ph-video-poster">
+      <source data-src="assets/video/atelier.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="vid__veil" aria-hidden="true"></div>
+  <div class="wrap vid__copy">
+    <p class="vid__kicker">Le geste artisanal</p>
+    <h2 class="h2" id="vid-h">De la terre brute au carreau</h2>
+    <p class="lead">Chaque carreau est découpé et façonné à la main, geste après geste, dans nos ateliers de Fès.</p>
+    <a class="btn btn--ghost vid__cta" href="https://www.instagram.com/maison.zellige/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg>Voir nos vidéos sur Instagram</a>
+  </div>
+  <button class="vid__toggle" id="vidToggle" type="button" aria-label="Mettre la vidéo en pause" aria-pressed="false" hidden><svg class="ico" aria-hidden="true"><use href="#i-pause"/></svg></button>
+</section>
+
+<!-- ================= POURQUOI NOUS ================= -->
+<section class="sec why" id="pourquoi" aria-labelledby="wh-h">
+  <div class="wrap">
+    <div class="sh sh--row">
+      <h2 class="h2" id="wh-h">Qualité, confiance, expertise</h2>
+      <p class="lead">Une maison familiale, des artisans à Fès, un accompagnement professionnel de la sélection jusqu’à la réalisation du projet.</p>
+    </div>
+    <div class="bento">
+      <article class="bt bt--a"><svg class="bt__pat" data-pat="12" viewBox="0 0 100 100" aria-hidden="true"></svg>
+        <div class="bt__num lnum" aria-hidden="true">30<sup>+</sup></div>
+        <div><h3>ans d’expérience</h3><p>Un savoir-faire familial développé au fil de plus de trois décennies.</p></div></article>
+      <article class="bt bt--b"><svg class="bt__pat" data-pat="8" viewBox="0 0 100 100" aria-hidden="true"></svg>
+        <h3>Qualité</h3><p>Des matériaux sélectionnés avec soin et un contrôle attentif de chaque collection.</p></article>
+      <article class="bt bt--c"><svg class="bt__pat" data-pat="10" viewBox="0 0 100 100" aria-hidden="true"></svg>
+        <h3>Confiance</h3><p>Un accompagnement professionnel et transparent, de la sélection jusqu’à la réalisation du projet.</p></article>
+      <article class="bt bt--d"><svg class="bt__pat" data-pat="8" viewBox="0 0 100 100" aria-hidden="true"></svg>
+        <h3>Expertise</h3><p>Une connaissance approfondie du zellige traditionnel et de ses possibilités dans l’architecture et le design.</p></article>
+      <article class="bt bt--e"><svg class="bt__pat" data-pat="12" viewBox="0 0 100 100" aria-hidden="true"></svg>
+        <h3>Artisanat authentique</h3><p>Des pièces fabriquées à la main par des artisans spécialisés à Fès.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPLICATIONS ================= -->
+<section class="sec alt app" id="applications" aria-labelledby="ap-h">
+  <div class="wrap">
+    <div class="sh sh--row">
+      <h2 class="h2" id="ap-h">Nos applications</h2>
+      <p class="lead">Du plan de travail au projet d’hôtel&nbsp;: survolez ou touchez un carreau pour voir le zellige en situation.</p>
+    </div>
+    <div class="fw" id="fw"></div>
+  </div>
+</section>
+
+<!-- ================= SUR MESURE ================= -->
+<section class="sec dark cmp" id="sur-mesure" aria-labelledby="cm-h">
+  <div class="wrap">
+    <div class="sh sh--row">
+      <h2 class="h2" id="cm-h">Votre projet, notre savoir-faire</h2>
+      <p class="lead">Nous réalisons des compositions de zellige adaptées aux projets architecturaux et aux besoins spécifiques des clients&nbsp;: couleurs, formats, motifs et compositions personnalisés.</p>
+    </div>
+    <div class="cmp__grid">
+      <div>
+        <div class="cmp__stage" id="cmpStage">
+          <div class="cmp__wall" id="cmpWall">
+            <canvas id="cmpCanvas" role="img" aria-label="Aperçu de votre composition de zellige"></canvas>
+            <div class="cmp__sheen"></div>
+          </div>
+          <div class="cmp__ground" aria-hidden="true"></div>
+        </div>
+        <p class="cmp__cap" id="cmpCap" aria-live="polite"></p>
+      </div>
+      <div class="cmp__panel">
+        <fieldset class="cmp__grp"><legend>Forme</legend><div class="cmp__chips" id="cmpShapes"></div></fieldset>
+        <fieldset class="cmp__grp" id="cmpPoseGrp"><legend>Pose</legend><div class="cmp__chips" id="cmpPoses"></div></fieldset>
+        <fieldset class="cmp__grp"><legend>Motif</legend><div class="cmp__chips" id="cmpPats"></div></fieldset>
+        <fieldset class="cmp__grp"><legend>Couleurs</legend>
+          <div class="cmp__slots">
+            <button type="button" class="slot" id="slot1" aria-pressed="true"><span class="slot__sw"></span><span>Couleur 1<small class="slot__n"></small></span></button>
+            <button type="button" class="slot" id="slot2" aria-pressed="false"><span class="slot__sw"></span><span>Couleur 2<small class="slot__n"></small></span></button>
+          </div>
+          <div class="pal" id="cmpPal" role="group" aria-label="Palette&nbsp;: choisissez une couleur pour l’emplacement actif"></div>
+        </fieldset>
+        <div class="cmp__act">
+          <button class="btn btn--primary" id="cmpAsk" type="button">Demander un devis pour cette composition</button>
+          <button class="btn btn--ghost" id="cmpAdd" type="button" data-sel-cmp data-sel-label></button>
+          <button class="btn btn--ghost" id="cmpShuffle" type="button">Varier les nuances</button>
+        </div>
+        <p class="fine">Aperçu indicatif&nbsp;: les couleurs, les reflets et les nuances réels varient d’un carreau à l’autre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOTRE HISTOIRE ================= -->
+<section class="sec story" id="histoire" aria-labelledby="hi-h">
+  <div class="wrap story__grid">
+    <div class="story__art" data-group3d aria-hidden="true">
+      <div class="aa"><div class="story__ring"></div><div class="story__arch" data-bg="ph-p-arbre"></div></div>
+    </div>
+    <div class="story__txt">
+      <h2 class="h2" id="hi-h">Un savoir-faire familial, transmis depuis plus de 30&nbsp;ans.</h2>
+      <p class="lead">La Maison AZ – ArchiZellige est née d’une passion familiale pour le zellige marocain traditionnel et d’un savoir-faire transmis de génération en génération.</p>
+      <p>Depuis plus de 30 ans, nous travaillons avec des artisans spécialisés à Fès, berceau du zellige marocain, pour préserver un artisanat authentique tout en l’adaptant aux exigences de l’architecture et du design contemporain.</p>
+      <p>De la sélection des matières aux couleurs, formes et motifs, chaque pièce est réalisée avec soin et porte la signature unique du travail artisanal.</p>
+      <p>Aujourd’hui, La Maison AZ fait le lien entre tradition, qualité et création contemporaine, en accompagnant architectes, designers et particuliers dans leurs projets, du classique au sur mesure.</p>
+      <p class="story__sign" aria-hidden="true">ArchiZellige</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec dark ct" id="contact" aria-labelledby="ct-h">
+  <div class="wrap ct__grid">
+    <div class="ct__info">
+      <div class="sh" style="margin-bottom:0">
+        <h2 class="h2" id="ct-h">Parlons de votre projet</h2>
+        <p class="lead">Catalogue, échantillons, devis, conseils sur les couleurs ou projet sur mesure&nbsp;: dites-nous ce dont vous avez besoin.</p>
+      </div>
+      <div class="ct__list">
+        <a class="crow" href="#" data-wa target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span><small>WhatsApp</small><b>06 61 31 62 29</b></span></a>
+        <a class="crow" href="#" data-tel><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span><small>Téléphone</small><b>06 61 31 62 29</b></span></a>
+        <a class="crow" href="mailto:maison.az2026@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><span><small>E-mail</small><b>maison.az2026@gmail.com</b></span></a>
+        <a class="crow" href="https://www.instagram.com/maison.zellige/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg><span><small>Instagram</small><b>@maison.zellige</b></span></a>
+      </div>
+      <p class="ct__fine">ArchiZellige, Casablanca. Nos carreaux sont fabriqués à la main à Fès.</p>
+    </div>
+    <form class="cform" id="cform" novalidate autocomplete="on">
+      <fieldset><legend>Votre demande</legend><div class="reqs" id="reqs" role="group" aria-label="Type de demande"></div></fieldset>
+      <div class="row2">
+        <label class="fld">Nom<input name="nom" type="text" autocomplete="name" required placeholder="Votre nom"></label>
+        <label class="fld">Téléphone ou e-mail<input name="contact" type="text" autocomplete="off" placeholder="Pour vous recontacter"></label>
+      </div>
+      <div class="row2">
+        <label class="fld">Type de projet
+          <select name="projet"><option value="">Choisir…</option><option>Cuisine</option><option>Salle de bains</option><option>Hammam</option><option>Riad</option><option>Hôtel</option><option>Restaurant</option><option>Villa</option><option>Projet architectural</option><option>Décoration intérieure</option><option>Autre</option></select>
+        </label>
+        <label class="fld">Ville ou pays<input name="ville" type="text" autocomplete="address-level2" placeholder="Où se situe le projet ?"></label>
+      </div>
+      <label class="fld">Message<textarea name="msg" rows="4" placeholder="Surface, couleurs envisagées, délais…"></textarea></label>
+      <div class="ctsel" id="ctSel" hidden></div>
+      <div class="cform__act">
+        <button class="btn btn--primary" type="button" id="sendWa"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Envoyer sur WhatsApp</button>
+        <button class="btn btn--ghost" type="button" id="sendMail"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>Envoyer par e-mail</button>
+      </div>
+      <div class="cfb" id="cfb" role="status" aria-live="polite"></div>
+      <button class="linkbtn" type="button" id="copyMsg" style="justify-self:start;font-size:.92rem">Copier le message</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__frise" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a class="brand" href="#top" aria-label="Retour en haut de page"><span class="brand__mark" aria-hidden="true"><img data-img="logo-navy" alt=""><img data-img="logo-sky" alt=""><img data-img="logo-orange" alt=""><img data-img="logo-gold" alt=""></span><span class="brand__word">ArchiZellige</span></a>
+        <p>Zellige artisanal façonné à la main. Designs, formes et couleurs sur mesure&nbsp;: installations et créations uniques pour vos espaces.</p>
+      </div>
+      <div>
+        <h4>Explorer</h4>
+        <ul><li><a href="#collections">Collections</a></li><li><a href="#couleurs">Couleurs</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#applications">Applications</a></li></ul>
+      </div>
+      <div>
+        <h4>La maison</h4>
+        <ul><li><a href="#apropos">À propos</a></li><li><a href="#atelier">Atelier</a></li><li><a href="#pourquoi">Pourquoi nous</a></li><li><a href="#histoire">Notre histoire</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="#" data-wa target="_blank" rel="noopener">WhatsApp&nbsp;: 06 61 31 62 29</a></li><li><a href="mailto:maison.az2026@gmail.com">maison.az2026@gmail.com</a></li><li><a href="https://www.instagram.com/maison.zellige/" target="_blank" rel="noopener">Instagram&nbsp;: maison.zellige</a></li><li><a href="#sur-mesure">Projet sur mesure</a></li></ul>
+      </div>
+    </div>
+    <div class="foot__base"><span>© 2026 La Maison AZ – ArchiZellige. Tous droits réservés.</span><span>Zellige fait main à Fès, au Maroc.</span></div>
+  </div>
+</footer>
+
+<div class="fab"><button class="fab__sel" id="fabSel" type="button" aria-label="Ouvrir ma sélection d’échantillons" hidden><svg class="ico" aria-hidden="true"><use href="#i-tiles"/></svg><span class="fab__txt">Ma sélection</span><span class="iconbtn__n" id="fabN">0</span></button><a href="#" data-wa target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span class="fab__txt">WhatsApp</span></a></div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drw" id="drw" role="dialog" aria-modal="true" aria-labelledby="drw-h" aria-hidden="true">
+  <div class="drw__hd"><h3 id="drw-h">Ma sélection</h3><button class="iconbtn" id="drwClose" type="button" aria-label="Fermer" data-autofocus><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+  <div class="drw__list" id="drwList"></div>
+  <div class="drw__ft"><button class="btn btn--primary" id="drwAsk" type="button">Demander ces échantillons</button><button class="linkbtn" id="drwClear" type="button">Tout effacer</button></div>
+</aside>
+
+<div class="modal" id="viewer" role="dialog" aria-modal="true" aria-label="Détail de la couleur" aria-hidden="true">
+  <button class="iconbtn modal__x" id="vwClose" type="button" aria-label="Fermer" data-autofocus><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button>
+  <button class="iconbtn modal__nav modal__nav--p" id="vwPrev" type="button" aria-label="Couleur précédente"><svg class="ico" aria-hidden="true"><use href="#i-arrow-l"/></svg></button>
+  <button class="iconbtn modal__nav modal__nav--n" id="vwNext" type="button" aria-label="Couleur suivante"><svg class="ico" aria-hidden="true"><use href="#i-arrow-r"/></svg></button>
+  <div class="vw">
+    <div class="vw__stage"><div class="vw__tile" id="vwTile"></div></div>
+    <div class="vw__info">
+      <h3 id="vwName"></h3>
+      <p id="vwDesc"></p>
+      <div class="vw__act">
+        <button class="btn btn--primary" id="vwSel" type="button" data-sel-label></button>
+        <button class="btn btn--light" id="vwInfo" type="button">Demander des informations</button>
+        <button class="btn btn--light" id="vwCmp" type="button">Composer avec cette couleur</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="lb" role="dialog" aria-modal="true" aria-label="Galerie de réalisations" aria-hidden="true">
+  <button class="iconbtn modal__x" id="lbClose" type="button" aria-label="Fermer" data-autofocus><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button>
+  <button class="iconbtn modal__nav modal__nav--p" id="lbPrev" type="button" aria-label="Image précédente"><svg class="ico" aria-hidden="true"><use href="#i-arrow-l"/></svg></button>
+  <button class="iconbtn modal__nav modal__nav--n" id="lbNext" type="button" aria-label="Image suivante"><svg class="ico" aria-hidden="true"><use href="#i-arrow-r"/></svg></button>
+  <figure class="lb__fig">
+    <img id="lbImg" alt="">
+    <figcaption class="lb__cap">
+      <b id="lbT"></b><span id="lbC"></span>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px">
+        <button class="btn btn--primary btn--sm" id="lbAsk" type="button">Un projet similaire&nbsp;? Demander un devis</button>
+        <button class="btn btn--light btn--sm" id="lbSel" type="button" data-sel-label></button>
+      </div>
+    </figcaption>
+  </figure>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript><p style="padding:24px;text-align:center">Ce site utilise JavaScript pour afficher les galeries. Contactez La Maison AZ&nbsp;: 06 61 31 62 29 · maison.az2026@gmail.com · instagram&nbsp;: maison.zellige</p></noscript>
